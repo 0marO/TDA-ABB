@@ -14,7 +14,7 @@ Finalmente, se utilizó una metodología de desarrollo orientado a pruebas.
 
 ##2 Teoría
 
-# 2.1Arboles N-arios o Generales.
+# 2.1 Arboles N-arios o Generales.
 Los árboles nacen de querer optimizar la búsqueda lineal de la lista, complejidad O(n), 
 para ello se buscó una estructura que similar a la búsqueda binaria, permitiría el acceso a 
 la información en un tiempo de O(log n).
@@ -25,6 +25,7 @@ nodo raíz que esta conectado a la raíz principal del árbol “grande”. De e
 definen 1, 2, 3, o múltiples nodos hijos (los nodos raíz de los sub-árboles) y un padre el 
 cual precede y está conectado con los primeros(nodo raíz del árbol grande) como muestra 
 la figura:
+
 ![image](https://user-images.githubusercontent.com/92110097/180874133-c0786d63-e8f0-4c71-b25f-2fff284b386b.png)
 
 Todos los nodos que tienen el mismo padre son hermanos (siblings).
@@ -32,6 +33,7 @@ Camino: Un camino desde un nodo a otro se define como la secuencia de nodos n1, 
 …, nk tal que ni es el padre de ni+1 para a 1 <= i <= k. La longitud es el número de aristas
 en el camino, k-1. En el árbol existe un solo camino entre la raíz general y cualquier otro 
 nodo, incluido si mismo (camino de longitud cero).
+
 ![image](https://user-images.githubusercontent.com/92110097/180874211-4002d56a-f212-4594-ba8b-f86ca61e9e56.png)
 
 Profundidad: Para cualquier nodo, la profundidad es la longitud del único camino entre sí
@@ -44,7 +46,9 @@ de n2 y que n2 es un descendiente de n1.
 Un árbol binario es otro tipo de TDA que puede estar vacío, o consistir en un nodo llamado 
 raíz conjuntamente con dos árboles binarios uno llamado derecha y otro llamado 
 izquierda ambos hijos del nodo raíz como muestra la figura:
+
 ![image](https://user-images.githubusercontent.com/92110097/180874475-675e8f2b-f67e-42ec-a0c7-827baf13c28a.png)
+
 Estos árboles están íntimamente relacionados a las operaciones de búsqueda, con el 
 objetivo de aproximarse a la búsqueda binaria.
 Una de las operaciones mas importantes que se pueden hacer con los árboles binarios es 
@@ -66,6 +70,7 @@ a cada nodo conformante una clave o valor que satisface las siguientes condicion
   2. la clave en el nodo derecho del hijo (si existe) es mayor que la clave en el nodo padre.
   3. los árboles derecho e izquierdo son también arboles binarios de búsqueda.
 Un claro ejemplo de este tipo de TDA es el siguiente:
+
 ![image](https://user-images.githubusercontent.com/92110097/180874650-67c871b9-2555-4627-82b4-49b429368bc7.png)
 
 #2.4 Operaciones de los árboles:
@@ -86,7 +91,9 @@ Si consideramos que la complejidad de la búsqueda depende de la altura del árb
 O(h) nos encontramos con que la complejidad de la operación es O(log n). Pero, si el árbol 
 no está equilibrado ( y esta implementación no tiene ninguna manera de hacerlo) se puede 
 dar el caso en que la altura sea como esta figura: 
+
 ![image](https://user-images.githubusercontent.com/92110097/180874837-6396bacb-75e0-449c-96c5-1f7eaab1ff08.png)
+
 esto nos lleva a que la complejidad de la búsqueda sea O(n), por 
 lo que sería lo mismo que buscar en un TDA de LISTA.
 
@@ -118,7 +125,9 @@ Es importante la distinción de los distintos tipos de árboles ya que fueron di
 desempeñar tareas diferentes y tienen complejidades operacionales diferentes, por 
 ejemplo, un árbol n-ario es mucho más útil para el sistema de archivos de un sistema 
 operativo que lo que sería un árbol binario o un ABB:
+
 ![image](https://user-images.githubusercontent.com/92110097/180875017-e302489e-bfce-461b-88eb-0e8e0d548921.png)
+
 Por otro lado, un árbol binario de búsqueda resulta mejor para la búsqueda de los 
 elementos que lo componen que un árbol n-ario.
 
